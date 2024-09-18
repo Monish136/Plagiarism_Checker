@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <style>
+        .navbar {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white; /* Changed to white */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-button {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff9900; /* Changed to orange */
+            background: none;
+            border: 2px solid #ff9900; /* Changed to orange */
+            border-radius: 25px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #ff9900;
+            color: white;
+        }
+
+        body {
+            background-color: #ff9900;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="navbar">
+        <div class="navbar-brand">
+            <i class="fas fa-check-circle text-black text-2xl"></i>
+            <span class="ml-2">Plagiarism Checker</span></div>
+        <div class="navbar-links">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="upload.html" class="nav-button">New Check</a>
+        </div>
+    </div>
+
+    <main class="p-8 flex-grow">
+        <h1 class="text-2xl font-bold mb-4">Plagiarism Check Results</h1>
+        <section class="bg-white p-6 rounded shadow mb-6">
+            <h2 class="text-xl font-semibold mb-2">Summary</h2>
+            <p>Your document contains 12% copied content, 5% references to external sources, and 3% AI-generated text.</p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-lg font-semibold mb-2">Copied Content</h3>
+                <p>Paragraph 1: Copied from <a href="https://www.wikipedia.com" class="text-blue-500">www.wikipedia.com</a></p>
+                <p>Paragraph 3: Copied from <a href="https://www.sanfoundry.com" class="text-blue-500">www.Sanfoundry.com</a></p>
+                <p>Paragraph 7: Copied from <a href="https://www.github.com" class="text-blue-500">www.Github.com</a></p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-lg font-semibold mb-2">External References</h3>
+                <p>Paragraph 2: Referenced <a href="https://www.medium.org" class="text-blue-500">www.Medium.org</a></p>
+                <p>Paragraph 4: Referenced <a href="https://www.blog.org" class="text-blue-500">www.Blog.org</a></p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-lg font-semibold mb-2">AI-Generated Text</h3>
+                <p>Paragraph 5: AI-generated content detected</p>
+                <p>Paragraph 6: AI-generated content detected</p>
+            </div>
+        </div>
+
+        <div class="flex justify-end mt-6">
+            <button class="bg-black text-white px-4 py-2 rounded mr-2">Download Report</button>
+            <button class="bg-black text-white px-4 py-2 rounded">Back to Home</button>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 text-center p-4">
+        © 2024 Plagiarism_Checker. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <style>
+        .footer {
+            width: 1000%;
+            padding: 20px;
+            background-color: gray;
+            color: gray;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-white font-sans min-h-screen flex flex-col">
+    <main class="flex-grow">
+        <div class="bg-[#ff9900] text-center py-8">
+            <h1 class="text-white text-4xl font-bold">Plagiarism Checker</h1>
+        </div>
+        
+
+        <div class="flex justify-center mt-4 space-x-4">
+            <button class="bg-purple-600 text-white py-2 px-4 rounded-full">AI Detection</button>
+        </div>
+
+        <!-- Flex container for both the report section and secdiv -->
+        <div class="flex justify-center mt-8 space-x-6 mx-4">
+            <!-- Report Section -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md w-5/12">
+                <h2 class="text-xl font-semibold mb-4">Report</h2>
+                <div class="flex justify-between mb-4">
+                    <div class="text-center">
+                        <h3 class="text-lg font-semibold">Web Search</h3>
+                        <p class="text-3xl text-red-500 font-bold">100%</p>
+                        <p class="text-gray-700">Plagiarized</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-semibold">Sources</h3>
+                        <p class="text-3xl text-blue-500 font-bold">10</p>
+                        <p class="text-gray-700">Sources found</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 text-justify">
+                    <span class="text-red-500">
+                        Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data and thus perform tasks without explicit instructions.[1] Recently, artificial neural networks have been able to surpass many previous approaches in performance.[2]
+                        ML finds application in many fields, including natural language processing, computer vision, speech recognition, email filtering, agriculture, and medicine.[3][4] When applied to business problems, it is known under the name predictive analytics. Although not all machine learning is statistically based, computational statistics is an important source of the field's methods.
+                        The mathematical foundations of ML are provided by mathematical optimization (mathematical programming) methods.
+                    </span>
+                </p>
+            </div>
+
+            <!-- Secdiv positioned to the right -->
+            <div class="secdiv w-5/12">
+                <div style="height: 550px;" class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-center">
+                        <div class="text-6xl font-bold text-blue-900">100%</div>
+                        <div class="text-gray-600 mt-2">of text is likely AI-generated</div>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-red-200 h-4 rounded-full"></div>
+                    </div>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-red-300"></div>
+                                <div class="text-red-700">AI-generated</div>
+                                <i class="fas fa-info-circle text-gray-400"></i>
+                            </div>
+                            <div class="text-gray-700">100%</div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-yellow-200"></div>
+                                <div class="text-gray-700">AI-generated & AI-refined</div>
+                                <i class="fas fa-info-circle text-gray-400"></i>
+                            </div>
+                            <div class="text-gray-700">0%</div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-4 h-4 rounded-full bg-green-200"></div>
+                                <div class="text-gray-700">Human-written</div>
+                                <i class="fas fa-info-circle text-gray-400"></i>
+                            </div>
+                            <div class="text-gray-700">0%</div>
+                        </div>
+                    </div>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded-full mt-6" onclick="window.location.href='2.0.html'">Check Details</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-300 text-center p-4">
+        <ul class="flex justify-center space-x-6 text-gray-700">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
